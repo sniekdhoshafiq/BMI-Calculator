@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                 textToSpeech.speak(""+tvDisplay.getText().toString(),
                         TextToSpeech.QUEUE_FLUSH, null, null);
                 
-            }else if (BMI>=40.1){
+            }else {
                 tvDisplay.append("\n" + "You are Obesity");
                 textToSpeech.speak(""+tvDisplay.getText().toString(),
                         TextToSpeech.QUEUE_FLUSH, null, null);

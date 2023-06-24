@@ -79,22 +79,22 @@ public class MainActivity extends AppCompatActivity {
             textToSpeech.speak(""+tvDisplay.getText().toString(),
                                 TextToSpeech.QUEUE_FLUSH, null, null);
 
-            if (BMI<=18.5){
+            if (BMI<=18.4){
                 tvDisplay.append("\n" + "You are Underweight");
                 textToSpeech.speak(""+tvDisplay.getText().toString(), 
                                 TextToSpeech.QUEUE_FLUSH, null, null);
                 
-            } else if (BMI>18.5 && BMI<=24.9) {
+            } else if (BMI>=18.5 && BMI<=25.0) {
                 tvDisplay.append("\n" + "You have Normal Weight");
                 textToSpeech.speak(""+tvDisplay.getText().toString(),
                         TextToSpeech.QUEUE_FLUSH, null, null);
                 
-            } else if (BMI>=25.0 && BMI<=29.9) {
+            } else if (BMI>=25.1 && BMI<=40.0) {
                 tvDisplay.append("\n" + "You are Overweight");
                 textToSpeech.speak(""+tvDisplay.getText().toString(),
                         TextToSpeech.QUEUE_FLUSH, null, null);
                 
-            }else {
+            }else if (BMI>=40.1){
                 tvDisplay.append("\n" + "You are Obesity");
                 textToSpeech.speak(""+tvDisplay.getText().toString(),
                         TextToSpeech.QUEUE_FLUSH, null, null);
